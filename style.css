@@ -11,4 +11,65 @@ p { background: purple;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 
+
+}
+
+.SECONDPARA{
+    background: red;
+    text-align: center;
+
+}
+nav {
+    background: black;
+    border: 1PX solid white;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    align-items: baseline;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+    
+    }
+    
+    
+    
+    
+    
+    div{
+    background: gray;
+    width: 20%;
+    text-align: center;
+    border: 1px solid white;
+    margin: 10px;
+    }
+    imG{
+    width: 100%;
+    
+    }
+    
+UL {
+
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+UL LI{
+padding: 10px 20px;
+border: hidden
+padding-left: 10px;
+
+}
+
+header UL LI a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+
+}
+
+UL LI a:hover {
+    border-bottom: 1px solid red;
 }
