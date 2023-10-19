@@ -1,9 +1,8 @@
-*{
-    padding: 0;
+*{padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;   
-    
+
 }
 
 .HEADER{
@@ -15,7 +14,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-   
+
 }
 .HEADER::before{
     content: "";
@@ -37,7 +36,7 @@ nav {
     POSITION: RELATIVE;
     z-index: 100;
     color: white;
-    
+
 
 }
 
@@ -58,16 +57,21 @@ nav ul li A:hover{
 
 .LOGO {
     font-size: 25PX;
+    
+}
+.LOGO a{
+    color: white;
+    text-decoration: none;
 }
 .BANNER{
     margin-top: 80px;
     max-width: 300%;
     color: white;
     text-align: center;
-    
-    
-    
-      
+
+
+
+
 }
 
 .BANNER h1{
@@ -95,7 +99,7 @@ H4 span{
 
 .BANNER P{
     margin-top: 50px
-    
+
 }
 
 
@@ -106,8 +110,8 @@ H4 span{
     right: 12%;
     z-index: 1;
     margin-bottom: 50%;
-    
-    
+
+
 }
 
 
@@ -117,6 +121,7 @@ main{
     background: black;
     color: white;
     padding: 4rem;
+    padding-top: 0%;
 
 }
 
@@ -147,7 +152,8 @@ h2 {
     justify-content: center;
     border: 1.2rem;
     margin: 2rem;
-    
+
+
 }
 .collections:hover img{
     scale: 1.1;
@@ -172,8 +178,8 @@ h2 {
     font-size: 18px;
     margin-top: 30px;
     border-radius: 6PX; 
-    
-    
+
+
 
 
 }
@@ -198,7 +204,10 @@ main h1{
 }
 main h1 span{
     color: red;
-    
+
+}
+.shopcategory{
+    padding: 0%;
 }
 
 
@@ -284,13 +293,13 @@ section{
 .contact{
     background: #101010;
     height: 100%;
-    width: 180%;
+    width: 100%;
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2,2fr);
     align-items: center;
     grid-gap: 6rem;  
-    
+
 }
 
 
@@ -300,7 +309,7 @@ section{
     color: #fff;
     margin-bottom: 20px;
     margin-right: 50px;
-    
+
 
 }
 
@@ -369,6 +378,86 @@ form textarea{
     .contact-form p{
         margin-bottom: 3rem;
     }
-   
+
 }
 
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #191919;
+    padding-top: 10px; 
+}
+
+.about-text {
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.about-text h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+
+ }
+ .about-text h1 span{
+    color: #f9004d;
+ }
+ .about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px ;
+
+ }
+
+ button {
+    background: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .3s;
+
+ }
+
+ button:hover{
+    background: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+ }
+ .aboutnav{ 
+ width: 100%;
+ height: 20vh;
+ padding: 0 10%;
+ background: black;
+}
+
+@media (max-width: 700px){
+    .footernav ul{
+        flex-direction: column;
+    }
+    .footernav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+      }
