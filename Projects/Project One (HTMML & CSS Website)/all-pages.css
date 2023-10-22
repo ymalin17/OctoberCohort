@@ -5,12 +5,13 @@
 
 }
 
+
 .HEADER{
     width: 100%;
     height: 100vh;
     padding: 0 10%;
     background: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('new.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banner.png.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -18,7 +19,6 @@
 }
 .HEADER::before{
     content: "";
-    position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
@@ -57,7 +57,7 @@ nav ul li A:hover{
 
 .LOGO {
     font-size: 25PX;
-    
+
 }
 .LOGO a{
     color: white;
@@ -144,7 +144,7 @@ h2 {
     background: white;
     color:black;
     width: 285px;
-    height: 375px;
+    height: 385px;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -180,9 +180,9 @@ h2 {
     border-radius: 6PX; 
 
 
-
-
 }
+
+
 
 .collections a:hover{
     transform: scale(1.1);
@@ -197,6 +197,7 @@ h2 {
 .product-price{
     text-align: center;
     font-size: 22px;
+    padding-top: 10px;
 }
 main h1{
     text-align: center;
@@ -245,6 +246,7 @@ transition: 0.5s;
 .footernav ul{
     display: flex;
     justify-content: center;
+    list-style: none;
 }
 .footernav ul li a{
     color: white;
@@ -295,7 +297,7 @@ section{
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2,2fr);
     align-items: center;
     grid-gap: 6rem;  
@@ -367,19 +369,6 @@ form textarea{
     transform: scale(1.1);
 }
 
-@media (max-width: 1570px) {
-    section{
-        padding: 80px 3%;
-        transition: .2s;
-    }
-    .contact-form h1{
-        font-size: 60px;
-    }
-    .contact-form p{
-        margin-bottom: 3rem;
-    }
-
-}
 
 .about{
     width: 100%;
@@ -451,6 +440,184 @@ form textarea{
  background: black;
 }
 
+
+
+
+
+
+/* Responsive media for all 3 pages*/
+
+@media (max-width: 1570px) {
+    .about{
+        padding: 80px 3%;
+        transition: .2s;
+    }
+    .contact-form h1{
+        font-size: 60px;
+    }
+    .contact-form p{
+        margin-bottom: 3rem;
+    }
+
+}
+
+@media only screen and (max-width:874px ) {
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+@media (max-width: 1012px){
+    .BANNER{
+        width: 100%;
+        font-size: 10px;
+    }
+    .BANNER h4{
+        font-size: 16px;
+
+    }
+    .BANNER h1{
+        font-size: 45px;
+    }
+    .BANNER p{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 990px){
+    .BANNER a{
+        margin-top: 25px;
+    }
+}
+
+
+@media (max-width: 874px){
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+
+    }
+
+    .BANNER {
+        margin-top: 0;
+
+    }
+
+      }
+
+@media (max-width: 543px){
+    .BANNER{
+        margin: 0;
+    }
+    .BANNER a{
+
+        padding: 10PX 30px;
+        font-size: 13px;
+        margin-top: 15px;
+        border-radius: 6PX ;   
+
+
+    }
+
+}
+@media (max-width: 491px){
+
+    .collections a{
+    padding: 10PX 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 6PX; 
+
+    }
+    .collections img{
+        height: 180px;
+        margin: 1rem;
+
+    }
+
+}
+
+@media (max-width: 413px){
+    .BANNER{
+        margin: 0;
+    }
+    .BANNER a{
+
+        padding: 10PX 30px;
+        font-size: 10px;
+        margin-top: 7px;
+        border-radius: 6PX ; 
+    }
+
+        .collections a{
+            padding: 7PX 20px;
+            font-size: 20px;
+            margin-top: 20px;
+            border-radius: 6PX; 
+
+            }
+            .collections img{
+                height: 180px;
+                margin: 1rem;
+
+            }
+    }
+    @media (max-width: 397px){
+        .collections a{
+            padding: 5PX 15px;
+            font-size: 15Pxp;
+            margin-top: 20px;
+            border-radius: 6PX; 
+
+            }
+            .collections img{
+                height: 180px;
+                margin: 1rem;
+
+            }
+        .product-title{
+                text-align: center;
+                font-size: 12px;
+                padding-bottom: 0%;
+            }    
+
+    }
+
+    @media (max-width: 381px){
+        .collections a{
+            padding: 4PX 12px;
+            font-size: 12xp;
+            margin-top: 20px;
+            border-radius: 6PX; 
+
+            }
+            .collections img{
+                height: 180px;
+                margin: 1rem;
+
+            }
+        .product-title{
+                text-align: center;
+                font-size: 12px;
+                padding-bottom: 0%;
+            }    
+
+    }
+
+
+@media (max-width: 427px){
+main h1{
+    font-size: 30px;
+}
+}
+
 @media (max-width: 700px){
     .footernav ul{
         flex-direction: column;
@@ -461,3 +628,18 @@ form textarea{
         margin: 10px;
     }
       }
+
+@media (max-width: 1570px) {
+        section{
+            padding: 80px 3%;
+            transition: .2s;
+        }
+        .contact-form h1{
+            font-size: 60px;
+        }
+        .contact-form p{
+            margin-bottom: 3rem;
+        }
+     }
+
+
